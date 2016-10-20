@@ -2,18 +2,40 @@ exports.config = {
     teamId: 'grampus'
     ,hashtag: 'grampus'
     ,teamName: '名古屋'
+    ,teamNameFull: '名古屋グランパス'
     ,appName: 'スマートJ for 名古屋グランパス'
     ,iPhoneAppUrl: 'https://itunes.apple.com/jp/app/id920460662?l=ja&ls=1&mt=8'
     ,androidAppUrl: 'https://play.google.com/store/apps/details?id=smartj.grampus'
+    ,backgroundColor: 'black'
+	,visitedBgColor : '#457'
+    ,mainTextColor: 'white'
     ,color: '#ff0000'
-    ,tintColor: '#ffaf00'
+    ,tintColor: 'yellow'
+    ,standingsBgcolor: '#ff0000'
+    ,standingsTeamFontColor: 'white'
+    ,resultsDetailBtnBgColorActive: '#333'
+    ,resultsDetailBtnColorActive: 'white'
+    ,resultsDetailBtnBgColorInactive: '#202020'
+    ,resultsDetailBtnColorInactive: '#444'
     ,dbName: 'smartj.grampus'
+    //URLベース
+    ,urlBase: 'https://smartj.mobi/redsmylife/'
     //ニュースのソースURL
     ,feedUrlBase: 'http://sub0000499082.hmk-temp.com/redsmylife/news.json'
     //日程・結果のソースURL
     ,resultsUrl: "http://sub0000499082.hmk-temp.com/redsmylife/results.json?teamId=grampus&season="
+    //順位表のソースURL
+    ,standingsUrl: 'http://sub0000499082.hmk-temp.com/redsmylife/standings.json'
     //設定、メッセージのソースURL
     ,messageUrl: "http://sub0000499082.hmk-temp.com/redsmylife/config.json?teamId=grampus"
+    //動画のソースURL
+    ,videoUrl: "http://sub0000499082.hmk-temp.com/redsmylife/video.json?teamId=grampus"
+    //報告URL
+    ,reportUrl: "https://smartj.mobi/redsmylife/report.json?teamId=grampus"
+    //利用規約URL
+    ,rulesUrl: "https://smartj.mobi/redsmylife/rules.jsp?appName="
+    //開発元メールアドレス
+    ,developerMail: "motoy3d+smartj@gmail.com"
     ,newsEntriesPerPage: 50
     ,googleAnalyticsTrackingId: 'UA-30928840-1'
     //nend(iPhone)
@@ -24,4 +46,6 @@ exports.config = {
     //nend(Android)
     ,nendSpotIdAndroid: 236273
     ,nendApiKeyAndroid: 'cc6fb84687cfa762a979fbc1711eedbf12f6bbec'
+    ,nendSpotIdAndroidBanner: 393948
+    ,nendApiKeyAndroidBanner: '61f35eb9db66cb293ddbb34ba1a90879d21fb2a9'
 };
