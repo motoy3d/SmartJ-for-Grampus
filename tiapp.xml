@@ -2,11 +2,11 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <id>smartj.grampus</id>
     <name>SmartJ for Grampus</name>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <publisher>Motoi Kataoka</publisher>
     <url>http://motoy3d.blogspot.com</url>
     <description>名古屋グランパスアプリ！</description>
-    <copyright>2016 by Motoi Kataoka</copyright>
+    <copyright>2017 by Motoi Kataoka</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
@@ -29,6 +29,11 @@
                 <false/>
                 <key>UIStatusBarStyle</key>
                 <string>UIStatusBarStyleLightContent</string>
+		        <key>NSAppTransportSecurity</key>
+		        <dict>
+		          <key>NSAllowsArbitraryLoads</key>
+		          <true/>
+		        </dict>
             </dict>
         </plist>
     </ios>
@@ -49,9 +54,7 @@
     <!-- Android設定はplatform/android/AndroidManifest.xmlで行う。
     WRITE_EXTERNAL_STORAGEパーミッションを無効化するのがtiapp.xmlではできないため -->
     <modules>
-        <module platform="android">net.nend</module>
         <module platform="iphone">de.marcelpociot.social</module>
-        <module platform="iphone">net.nend</module>
     </modules>
     <deployment-targets>
         <target device="android">true</target>
@@ -59,6 +62,6 @@
         <target device="iphone">true</target>
         <target device="mobileweb">false</target>
     </deployment-targets>
-    <sdk-version>5.5.1.GA</sdk-version>
+    <sdk-version>6.1.2.GA</sdk-version>
     <property name="appc-app-id" type="string">58088da9713b578a1d2c773b</property>
 </ti:app>
